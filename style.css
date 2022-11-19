@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #1400ff 0%, #000000 100%),
+    linear-gradient(154.03deg, #33ff00 0%, #ff003d 74.04%),
+    linear-gradient(341.1deg, #f0b4ff 7.52%, #1700a4 77.98%),
+    radial-gradient(49.82% 80.51% at 49.82% 50%, #8100a2 0%, #ff3d00 100%),
+    radial-gradient(50% 72.12% at 50% 50%, #eb00ff 0%, #110055 100%);
+  background-blend-mode: overlay, difference, difference, difference, normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  height: 57vh;
+  width: 47vh;
+  background: #8a0033;
+  color: white;
+  box-shadow: 10px 10px #f190a7;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+.settings {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+input#length {
+  border-radius: 10px;
+  text-align: center;
+}
+input[type="checkbox"] {
+  margin-right: 0;
+}
+.result {
+  margin-top: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 18px 15px;
+  border-radius: 10px;
+  height: 2.5rem;
+  width: 100%;
+}
+#result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  color: black;
+}
+.btn {
+  position: absolute;
+  background: white;
+  top: 3px;
+  right: 5px;
+  height: 2.2rem;
+  width: 2.2rem;
+  cursor: pointer;
+}
+.btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+.btn-result {
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.7rem 5rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  background-color: #f190a7;
+  color: black;
+  transition: all 0.3s ease-in;
+}
+.btn-result:hover {
+  background-color: white;
+}
